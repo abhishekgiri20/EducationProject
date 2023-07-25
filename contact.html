@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Education</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thank you! we received your message and  we will contact you very soon." ))
+          .then(() => {  window.location.reload(); })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="images/logo.svg" alt="" />
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a  href="course.html">Courses</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+      <img id="menu-btn" src="images/menu.png" alt="" />
+    </div>
+  </nav>
+  <!--Home-->
+  <section id="about-home">
+    <h2>Contact Us</h2>
+  </section>
+  <section id="contact">
+    <div class="getin">
+        <h2>Get in touch</h2>
+        <p>Looking for help? Fill this form and start a new adventure.</p>
+        <div class="getin-details">
+            <h3>Headquaters</h3>
+            <div >
+                <i class="far fa-home get"></i>
+                <p>744 New Delhi,Chandni Chowk ,New Delhi</p>
+            </div>
+            <h3>Phone</h3>
+            <div >
+                <i class="fas fa-phone-alt get"></i>
+                <p>(+91)9193872560 <br>(+91)8120356456</p>
+            </div>
+            <h3>Support</h3>
+            <div >
+                <i class="fal fa-envelope-open-text get"></i>
+                <p>techeduca@support.com <br>help@educa.com</p>
+            </div>Follow Us</h3>
+            <div class="pro-links">
+              
+              <a
+                href="https://www.instagram.com/abhishek_giri_01"
+                class="fab fa-instagram"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abhishek-giri01"
+                class="fab fa-linkedin-in"></a>
+              </div>
+        </div>
+    </div>
+    <!-- Contact Form -->
+
+<div class="form">
+  <h4>Let's Connect</h4>
+  <p>You can connect with us by filling the form</p>
+  <form id="myForm">
+    <div class="form-row">
+      <input name="name" type="text" placeholder="Your Name" required>
+      <input name="email" type="text" placeholder="Email" required>
+    </div>
+    <div class="form-col">
+      <input name="subject" type="text" placeholder="Subject" required>
+    </div>
+    <div class="form-col">
+      <textarea name="message" id="" cols="30" rows="8" placeholder="How can we help?" ></textarea>
+    </div>
+    <div class="form-col">
+      <button type="submit">Send Message</button>
+     
+    </div>
+  </form>
+  <div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <p>Thank you for your message🙋! We will get back to you shortly😊</p>
+  </div>
+</div>
+ </section>
+  
+
+<!-- Footer section -->
+
+  <footer>
+
+    <div class="footer-col">
+      <h3>Top Products</h3>
+      <li>Manage Reputation</li>
+      <li>Power Tools</li>
+      <li>Managed Website</li>
+      <li>Marketing Service</li>
+    </div>
+   
+    <div class="footer-col">
+      <h3>Features</h3>
+      <li>Manage Reputation</li>
+      <li>Power Tools</li>
+      <li>Managed Website</li>
+      <li>Marketing Service</li>
+    </div>
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <li>Guides</li>
+      <li>Research</li>
+      <li>Experts</li>
+      <li>Marketing Service</li>
+    </div>
+    <div class="footer-col">
+      <h3>News Letter</h3>
+      <p>You can trust us. we only send promo offers</p>
+      <div class="subscribe">
+        <input type="email" placeholder="your Email address" required/>
+        <a href="about.html" class="yellow" onclick="alert('Thankyou for subsribe to our channel')">SUBSCRIBE</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright @2023 All Rights reserved | This template is made by
+        Abhishek Giri
+      </p>
+      <div class="pro-links">
+        <a href="https://www.facebook.com/profile.php?id=100028013228202" class="fab fa-facebook-f"></a>
+        <a
+          href="https://www.instagram.com/abhishek_giri_01"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abhishek-giri01"
+          class="fab fa-linkedin-in"
+        ></a>
+      </div>
+    </div>
+    </footer>
+        <script src="index.js">
+     $('#menu-btn').click(function () {
+        $('nav .navigation ul').addClass('active');
+      });
+      $('#menu-close').click(function() {
+        $('nav .navigation ul').removeClass('active');
+      });
+      
+    </script>
+</body>
+
+</html>

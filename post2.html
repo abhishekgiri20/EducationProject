@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Education</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="images/logo.svg" alt="" />
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img id="menu-btn" src="images/menu.png" alt="" />
+    </div>
+  </nav>
+    <!-- Post Section -->
+  <section id="blog-container">
+    <div class="blogs blogpost">
+      <div class="post">
+        <img src="images/b2.jpg" alt="" />
+        <h3>Learn VUE.JS In The Easiest Way</h3>
+        <p>
+        <h3>What is VUE.JS</h3>
+        Vue.js is an open-source progressive JavaScript framework used to develop interactive web user interfaces and
+        single-page applications. Vue.js is mainly focused on the view part of the application that is also called
+        front end development.<br>
+        Vue.js is going popular day by day because it is very easy to integrate with other projects and libraries. It
+        is very simple to install and use. Even beginners can understand it easily and start building their own user
+        interfaces.<br><br>
+        <h3>The Progressive Framework</h3>
+        Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the
+        web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in
+        mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in
+        different ways:<br>
+
+        (i) Enhancing static HTML without a build step<br>
+        (ii)Embedding as Web Components on any page<br>
+        (iii)Single-Page Application (SPA)<br>
+        (iv)Fullstack / Server-Side Rendering (SSR)<br>
+        (v) Jamstack / Static Site Generation (SSG)<br>
+        (vi)Targeting desktop, mobile, WebGL, and even the terminal<br>
+        If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and
+        JavaScript knowledge, and you should be able to follow along without being an expert in any of these.<br><br>
+
+        If you are an experienced developer interested in how to best integrate Vue into your stack, or you are curious
+        about what these terms mean, we discuss them in more detail in Ways of Using Vue.<br>
+
+        Despite the flexibility, the core knowledge about how Vue works is shared across all these use cases. Even if
+        you are just a beginner now, the knowledge gained along the way will stay useful as you grow to tackle more
+        ambitious goals in the future. If you are a veteran, you can pick the optimal way to leverage Vue based on the
+        problems you are trying to solve, while retaining the same productivity. This is why we call Vue "The
+        Progressive Framework": it's a framework that can grow with you and adapt to your needs.
+        <br><br />
+        <h3>Advantages of VUE.JS</h3>
+        (i) Keeping it simple.<br>
+        (ii) Lightweight.<br>
+        (iii) No steep learning curve.<Br>
+        (iv) A useful range of tools.<br>
+        (v) Incrementally adoptable.<br>
+        (vi) Integrates with other frameworks.<br>
+        (vii) Virtual DOM modelling and rendering.<br>
+        (viii) DOM manipulation benefit.<br><br>
+        <h3>Disdvantages of VUE.JS</h3>
+        (i) Lack of support.<br>
+        (ii) Language barriers.<br>
+        (iii)  Over Flexibility.<br>
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-col">
+      <h3>Top Products</h3>
+      <li>Manage Reputation</li>
+      <li>Power Tools</li>
+      <li>Managed Website</li>
+      <li>Marketing Service</li>
+    </div>
+    >
+    <div class="footer-col">
+      <h3>Features</h3>
+      <li>Manage Reputation</li>
+      <li>Power Tools</li>
+      <li>Managed Website</li>
+      <li>Marketing Service</li>
+    </div>
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <li>Guides</li>
+      <li>Research</li>
+      <li>Experts</li>
+      <li>Marketing Service</li>
+    </div>
+    <div class="footer-col">
+      <h3>News Letter</h3>
+      <p>You can trust us. we only send promo offers</p>
+      <div class="subscribe">
+        <input type="email" placeholder="your Email address" required />
+        <a href="about.html" class="yellow" onclick="alert('Thankyou for subsribe to our channel')">SUBSCRIBE</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright @2023 All Rights reserved | This template is made by
+        Abhishek Giri
+      </p>
+      <div class="pro-links">
+        <a href="https://www.facebook.com/profile.php?id=100028013228202" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/abhishek_giri_01" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/abhishek-giri01" class="fab fa-linkedin-in"></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $('#menu-btn').click(function () {
+      $('nav .navigation ul').addClass('active');
+    });
+    $('#menu-close').click(function () {
+      $('nav .navigation ul').removeClass('active');
+    });
+  </script>
+</body>
+
+</html>

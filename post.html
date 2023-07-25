@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Education</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="images/logo.svg" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+      <!-- Post Section -->
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/b1.jpg" alt="" />
+          <h3>Learn Web Development In The Easiest Way</h3>
+          <p>
+            Web development refers to the creating, building, and maintaining of
+            websites. It includes aspects such as web design, web publishing,
+            web programming, and database management. It is the creation of an
+            application that works over the internet i.e. websites.
+            <br><br />Web Development can be classified into two ways:<br><br>
+
+            Frontend Development<br>
+            Backend Development<br><br>
+            <h3>Frontend Development</h3>The part of a website where the user interacts directly is termed as front end.
+             It is also referred to as the ‘client side’ of the application.<br><h4>HTML:</h4> HTML stands for HyperText Markup Language.
+              It is used to design the front end portion of web pages using markup language. 
+              It acts as a skeleton for a website since it is used to make the structure of a website.<Br>
+             <h4>CSS:</h4> Cascading Style Sheets fondly referred to as CSS is a simply designed language intended to simplify the process of making web pages presentable. 
+             It is used to style our website.<br>
+             <h4>JavaScript:</h4> JavaScript is a scripting language used to provide a dynamic behavior to our website.<br><br>
+             <h3>Backend Development</h3>
+             Backend is the server side of a website. It is part of the website that users cannot see and interact with. It is the portion of software that does not come in direct contact with the users.
+              It is used to store and arrange data.
+             <br /><br /><h4>PHP:</h4> PHP is a server-side scripting language designed specifically for web development.<br>
+             <h4>Java:</h4>Java is one of the most popular and widely used programming languages. It is highly scalable.<br>
+             <h4>Python:</h4> Python is a programming language that lets you work quickly and integrate systems more efficiently.
+             <h4>Node.js</h4> Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside a browser.
+             <h4>Back End Frameworks:</h4> The list of back end frameworks are: Express, Django, Rails, Laravel, Spring, etc.<br>
+             
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>News Letter</h3>
+        <p>You can trust us. we only send promo offers</p>
+        <div class="subscribe">
+          <input type="email" placeholder="your Email address" required />
+          <a href="about.html" class="yellow" onclick="alert('Thankyou for subsribe to our channel')">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @2023 All Rights reserved | This template is made by
+          Abhishek Giri
+        </p>
+        <div class="pro-links">
+          <a href="https://www.facebook.com/profile.php?id=100028013228202" class="fab fa-facebook-f"></a>
+          <a
+            href="https://www.instagram.com/abhishek_giri_01"
+            class="fab fa-instagram"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/abhishek-giri01"
+            class="fab fa-linkedin-in"
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $('#menu-btn').click(function () {
+        $('nav .navigation ul').addClass('active');
+      });
+      $('#menu-close').click(function() {
+        $('nav .navigation ul').removeClass('active');
+      });
+    </script>
+  </body>
+</html>
